@@ -17,12 +17,13 @@ def get_params(model):
     if '{' in param_line and '}' in param_line:
       #values = param_line.split('{')[1].split('}')[0].replace('"', '').split(',')
       import re
-      values = eval(re.search('.*(\{.*?\}).*', a).group(1))
+      values = eval(re.search('.*(\{.*?\}).*', param_line).group(1))
       param_names[param_name] = values
     else:
       param_names[param_name] = []
     
   return param_names
+
 
 # from sklearn.tree import DecisionTreeRegressor
 # get_params(DecisionTreeRegressor)
