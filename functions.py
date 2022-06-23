@@ -1,7 +1,7 @@
 def get_params(model):
   
   from inspect import getsource
-  doc = getsource(DecisionTreeRegressor)
+  doc = getsource(model)
   
   param_lines = []
   for row in doc.split('\n'):
