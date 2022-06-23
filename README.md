@@ -1,1 +1,1 @@
-# Dynamic-Grid-Search
+# Auto-Grid-Search
