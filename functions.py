@@ -1,4 +1,6 @@
-def get_params(model):
+# sklearn models have get_params() method which returns a dict of params with their default values
+
+def get_params_custom(model):
   
   from inspect import getsource
   doc = getsource(model)
@@ -26,4 +28,4 @@ def get_params(model):
 
 
 # from sklearn.tree import DecisionTreeRegressor
-# get_params(DecisionTreeRegressor)
+# get_params_custom(DecisionTreeRegressor)
